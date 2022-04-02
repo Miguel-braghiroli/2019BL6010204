@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="shositodbModelStoreContainer" CdmEntityContainer="shositodbEntities">
+    <EntitySetMapping Name="categorias">
+      <EntityTypeMapping TypeName="shositodbModel.categoria">
+        <MappingFragment StoreEntitySet="categoria">
+          <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+          <ScalarProperty Name="categoria1" ColumnName="categoria" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="colors">
+      <EntityTypeMapping TypeName="shositodbModel.color">
+        <MappingFragment StoreEntitySet="color">
+          <ScalarProperty Name="id_color" ColumnName="id_color" />
+          <ScalarProperty Name="color1" ColumnName="color" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productoes">
+      <EntityTypeMapping TypeName="shositodbModel.producto">
+        <MappingFragment StoreEntitySet="producto">
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="producto1" ColumnName="producto" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tallas">
+      <EntityTypeMapping TypeName="shositodbModel.talla">
+        <MappingFragment StoreEntitySet="talla">
+          <ScalarProperty Name="id_talla" ColumnName="id_talla" />
+          <ScalarProperty Name="talla1" ColumnName="talla" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
