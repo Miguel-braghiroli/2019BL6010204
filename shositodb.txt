@@ -1,0 +1,44 @@
+create database shositodb;
+go
+create table talla(
+id_talla int identity(1,1) primary key,
+talla varchar(4),
+estado varchar(10));
+go
+create table color(
+id_color int identity(1,1) primary key,
+color varchar(25),
+estado varchar(10));
+go
+create table categoria(
+id_categoria int identity(1,1) primary key,
+categoria varchar(30),
+estado varchar(10));
+go
+create table producto(
+id_producto int identity(1,1) primary key,
+categoria varchar(30),
+producto varchar(50),
+precio int,
+estado varchar(10));
+go
+insert into talla(talla, estado) values('M', 'D');
+insert into talla(talla, estado) values('L', 'D');
+insert into talla(talla, estado) values('XL', 'D');
+insert into talla(talla, estado) values('XXL', 'D');
+go
+
+insert into color(color, estado) values('rojo', 'D');
+insert into color(color, estado) values('azul', 'D');
+insert into color(color, estado) values('verde', 'D');
+insert into color(color, estado) values('negro', 'D');
+go
+insert into categoria(categoria, estado) values('camisa','D');
+insert into categoria(categoria, estado) values('camiseta','D');
+insert into categoria(categoria, estado) values('pantalon','D');
+insert into categoria(categoria, estado) values('short','D');
+go
+insert into producto(categoria, producto, precio, estado) values('camisa', 'camisa polo', 25, 'D');
+insert into producto(categoria, producto, precio, estado) values('camiseta', 'camiseta guess', 36, 'D');
+insert into producto(categoria, producto, precio, estado) values('pantalon', 'pantalon levis', 49, 'D');
+insert into producto(categoria, producto, precio, estado) values('short', 'short playero', 15, 'D');
